@@ -4,14 +4,40 @@
     box-sizing: border-box;
 }
 label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: antiquewhite;
+    font-size: 20px;
     font-weight: bold;
     padding: 10;
+
 }
+.pf-edad{
+    text-align: center;
+    font-size: 18px;
+    color: blue;
+}
+.cont-columna{
+    padding: 15px;
+    display: flex;
+justify-content:space-around;
+align-items: center;
+
+}
+fieldset{
+    text-align: center;
+    font-size: 22px;
+}
+
+input[type="radio"]{  
+    width: 30px;
+    height: 22px;
+    /*display:inline-flex;    
+    align-items: center;*/
+  }
 .contBtn {
     padding: 5px;
     display: flex;
-    justify-content: end;
+    justify-content:end;
     align-items: center;
 }
 
@@ -24,4 +50,41 @@ label{
     margin: auto;
     background-color:ghostwhite;
     text-align: left;
+}
+.pfCilsa{
+    font-size: 22px;
+}
+.oculto{
+    display:none;
+}
+
+.visible{
+    display:inline;
+}
+#infopag {
+    background-color: rgb(137, 204, 177);
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    margin: 20px 0px;
+    font-size: 25px;
+    border: thin solid rgb(122, 75, 230); 
+}
+input[type="button"]{
+    width: 180px;
+    height: 25px;
+    font-size: 20px;
+    background-color: #277820;
+    color: #fff;
+    border: 10;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer; 
+    margin: 10px 15px;
+}
+a {
+    padding: 15px;
+    color: blue;
+    cursor: pointer;
 }

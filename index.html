@@ -24,8 +24,30 @@
                 </div>
                 
                 <div class="navbar-end">
-                    <p>Cerrar sesión</p>
-    
+                    Reloj
+                    <iframe class="ifr-reloj" name="ifr-reloj" src="/reloj/reloj.html" width="200" height="90">Reloj</iframe>
+                    <script>
+                        var d = new Date();
+                        document.write(' ' + d.getHours() + ':' + d.getMinutes() + ': ' + d.getSeconds());
+                        document.getElementById("current_date").innerHTML = getHours();
+        
+                        myDate = new Date();
+                        hours = myDate.getHours();
+                        minutes = myDate.getMinutes();
+                        seconds = myDate.getSeconds();
+                        if (hours < 10) hours = 0 + hours;
+                        if (minutes < 10) minutes = "0" + minutes;
+                        if (seconds < 10) seconds = "0" + seconds;
+                        let HoraActual = hours + ":" + minutes + ":" + seconds
+                        $("#HoraActual").text(hours+ ":" +minutes+ ":" +seconds);
+                        alert(hours + ":" + minutes + ":" + seconds);
+        
+                        setTimeout("showTime()", 1000);
+                        let hora = HoraActual + d.getHours() + ':' + d.getMinutes() + ': ' + d.getSeconds();
+                       console.log(HoraActual+"\nhyt  " +hora +"\nds   " +hours+ ":" +minutes+ ":" +seconds);
+                        document.getElementById("resul").textContent = hora + "\nEstás por : " + hours + ":" + minutes + ":" + seconds;
+        
+                    </script>
                 </div>
             </div>
         </nav>
@@ -39,7 +61,7 @@
                         <a class="navbar-item" href="ejer2/ejer2.html"  target="ifr-ejer">Ejercicio 2</a>
                         <a class="navbar-item" href="ejer3/ejer3.html"  target="ifr-ejer">Ejercicio 3</a>
                         <a class="navbar-item" href="ejer4/ejer4.html"  target="ifr-ejer">Ejercicio 4</a>
-                        <a class="navbar-item" href="ejer5/ejer5.html"  target="ifr-ejer">Ejercicio 5</a>
+                        <a class="navbar-item" href="mod5/ejer5.html"  target="ifr-ejer">Ejercicio 5</a>
                     </div>
     
                 </div>
@@ -56,6 +78,23 @@
         </div>
     </div></div>
     </main>
+    <section class="st-conts">
+        <h4>Comentarios y/o Sugerencias</h4>
+
+        <div class="cnt-suger"> 
+        <!--form action="mailto:janina.sanz.30@gmail.com?Subject='Consulta web'" method="post"></form-->
+        <form id="formTask">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="title" placeholder="Ingrese su nombre aquí">
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="description" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
+        <button type="submit">Guardar</button>
+        </form>
+        <div class="cnt-comen"> algo
+            <div id="tasks"></div>
+          </div>
+        </div>
+    </section>
     <footer>
         <div class="cont-footer">
             <div class="col-12 color10 text-center">
@@ -64,5 +103,6 @@
             </div>
         </div>
     </footer>
+    <script src="/scripts/tasks.js"></script>
 </body>
 </html>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="/styles/views.css">
+    <script src="/mod5/app.js"></script>
     <title>mod5-DOM</title>
     <!-- estilo para ocultar la informacion del ultimo parrafo -->
  <style type="text/css">
@@ -30,19 +31,24 @@ ciudades de Santa Fe, Rosario, Córdoba, <a href="https://www.instagram.com/form
  </ul>
 
  <input type="button" value="Añadir su Nombre" onclick="agregar();">
- <hr color="blue" size=3>
+ <hr color="green" size=3>
  <h3>Conoce un poco mas sobre nosotros</h3>
- <p id="texto">CILSA es una Organización No Gubernamental (O.N.G.) de bien público fund
-ada el 14 de mayo de 1966 en la ciudad de Santa Fe, República Argentina. <span id="adicion
-al" class="oculto">Tiene como MISION: Promover la inclusión plena de personas con discapac
-idad y personas provenientes de sectores marginados de la sociedad como niños, niñas y ado
-lescentes en situación de vulnerabilidad social.</span></p>
- <a id="enlace" href="#" onclick="mostrar(); return false;">Seguir leyendo</a>
- <script> 
+ <p class="pfCilsa" id="texto">CILSA es una Organización No Gubernamental (O.N.G.) de bien público fundada 
+    el 14 de mayo de 1966 en la ciudad de Santa Fe, República Argentina. <br> <br>
+
+   <span id="adicional" class="oculto"> <b> Tiene como MISION: </b>Promover la inclusión 
+                    plena de personas con discapacidad y personas provenientes de sectores 
+                    marginados de la sociedad como niños, niñas y adolescentes en <i> situación 
+                    de vulnerabilidad social.</i></span></p>
+
+<a id="enlace" href="#" onclick="mostrar(); return false;">Seguir leyendo.</a>
+<a id="leerMenos" class="oculto" onclick="ocultarSpan();">Leer menos.</a>   
+
+ <!--script> 
  window.onload = function() {
  var info = document.getElementById("infopag"); 
  var enlaces = document.getElementsByTagName("a");
- // Mensaje de bienvenida mas nombre ingresado (Pista usar ,innerHTML)
+  //Mensaje de bienvenida mas nombre ingresado (Pista usar ,innerHTML)
 
  // Numero de enlaces que tiene la pagina (Pista usar ,innerHTML)
 
@@ -52,11 +58,11 @@ lescentes en situación de vulnerabilidad social.</span></p>
  //con esta funcion mostramos el contenido faltante del ultimo parrafo
  function mostrar() {
  var elemento = document.getElementById("adicional");
- elemento.className = "visible";
+ elemento.class = "visible";
 
  var enlace = document.getElementById("enlace");
- enlace.className = "oculto";
+ enlace.class = "oculto";
  }
- </script> 
+ </script--> 
  </body>
 </html>

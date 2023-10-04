@@ -55,8 +55,9 @@ h3 {
 
 }
 .navbar-item:hover{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.484);
     transition: background-color 0.1s;
+    
 }
 
 .navbar-end {
@@ -99,6 +100,7 @@ main{
 
 .cont-ifr {
     width: 1050px;
+    height: auto;
     margin-left: 20px;
     padding: 15px;
 background-color:#f5f2ee;
@@ -107,7 +109,7 @@ border-radius: 15px;
 
 .ifr-ejer {
     width: 950px;
-    height: 500px;
+    height: 800px;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -116,6 +118,50 @@ border-radius: 15px;
 }
 
 
+/*seccion 3- Contacto*/
+.st-conts {
+    backface-visibility: visible;
+}
+.cnt-suger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cnt-comen{
+    background-color: #6ea8e2;
+}
+.st-conts h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;    
+    font-weight: bold;
+}
+
+.st-conts form {
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+}
+
+.st-conts form * {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.st-conts form input textarea {
+    background-color: white;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    outline: 1px solid grey;
+    border-radius: 5px;
+}
+
+.st-conts form button {
+    width: auto;
+
+
+}
 footer {
     padding: 20px;
     background-color: #F2F6FA !important;

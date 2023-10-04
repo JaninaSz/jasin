@@ -21,13 +21,51 @@
     <div id="contFicha"></div>
     
     <fieldset>
-        <legend>1- Muestra el radiobutton seleccionado</legend>
+        <legend >1- Muestra el radiobutton seleccionado</legend>
         <h3>Estado.</h3>
         <label id="lblCheck">Seleccione una opción</label><br>
-        <input type="radio" name="stat" value="sed." onchange="state(this.value)"/> Con sed<br />
-        <input type="radio" name="stat" value="apetito." onchange="state(this.value)" /> Con apetito<br />
-        <input type="radio" name="stat" value="sueño." onchange="state(this.value)" defaultChecked="true"/> Con sueño<br />
+        <input type="radio" class="inpOpcion" name="stat" value="sed." onchange="state(this.value)"/> Con sed
+        <input type="radio" class="inpOpcion" name="stat" value="apetito." onchange="state(this.value)" /> Con apetito
+        <input type="radio" class="inpOpcion" name="stat" value="sueño." onchange="state(this.value)" defaultChecked="true"/> Con sueño
 
     </fieldset>
+    <div class="cont-columna">
+    <fieldset>
+        <legend>2- Determinar el número mayor</legend>
+        <h3>Ingrese dos números:</h3>
+        <p>
+            <label for="n1">Primer número </label>
+            <input type="number" id="num1" name="n1" required/>
+        </p>
+        <p>
+            <label for="n2">Segundo número</label>
+            <input type="text" id="num2" name="n2" required/>
+        </p>
+        <p>
+            <input type="button" name="btnComparar" value="Comparar" onclick="comparar()" />
+            
+        </p>
+    </fieldset>
+    
+    <fieldset>
+        <legend>3- Sumar dos valores.</legend>
+        <h3>Ingrese dos valores:</h3>
+        <p>
+            <label for="val1">Primer número: </label>
+            <input type="text" id="val1" name="val1" />
+        </p>
+        <p>
+            <label for="val2">Segundo número: </label>
+            <input type="text" id="val2" name="val2" />
+        </p>
+        <p>
+            <input type="button" name="btnSuma" value="Sumar" onclick="sumar()" />
+            
+        </p>
+    </fieldset>
+    
+</div>
+<div class="cont-columna">
+<button id="btn-reset" class="btn-reset" onclick="limpiar()" disabled>Limpiar</button></div>
 </body>
 </html>
