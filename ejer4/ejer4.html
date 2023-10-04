@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="/styles/views.css">
+    <title>Ejer 4</title>
+</head>
+<body>
+    <h1>Ingreso de datos</h1>
+    <p>Crear una página y agrega dos radiobuttons, cuando uno de ellos se seleccione que
+        muestre un mensaje diciendo que opción se seleccionó.
+    <p> en la misma pagina, crear dos input de números y un botón, al pulsar el botón, mostrar
+            en un alert cual es el mayor de los dos.</p>
+        •  Y en la última parte de esta página, que deje ingresar dos números (input de html, no
+        prompt), y que al pulsar un boton, ejecute una función suma, que sume dichos números.
+        <br>
+        • Para esto investigue el evento OnClick() de los input de HTML.
+        </p>
+    <div id="contFicha"></div>
+    
+    <fieldset>
+        <legend>1- Muestra el radiobutton seleccionado</legend>
+        <h3>Estado.</h3>
+        <label id="lblCheck">Seleccione una opción</label><br>
+        <input type="radio" name="stat" value="sed." onchange="state(this.value)"/> Con sed<br />
+        <input type="radio" name="stat" value="apetito." onchange="state(this.value)" /> Con apetito<br />
+        <input type="radio" name="stat" value="sueño." onchange="state(this.value)" defaultChecked="true"/> Con sueño<br />
+
+    </fieldset>
+</body>
+</html>
