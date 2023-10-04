@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/views.css">
+    <script src="app.js"></script>
+    <title>Ejer 2</title>
+</head>
+<body onload="escribir()">
+    <h1>Modifiquemos un array</h1>
+    <p> El profesor solicita una actividad y los alumnos han 
+        realizado la entrega, pero necesita saber el momento en 
+        que la hizo. <br> Para ello vamos a declarar un Array que 
+        llamaremos “posiciones” con los siguientes valores:
+           <p><b>Nahuel, Julián, Lorena, Gerónimo, Jorge, Adrián y 
+            Candela.</b></p>
+        •  Vamos a suponer que es el orden de posiciones de la 
+        lista de alumnos. <br>
+        •  Imprimiremos el array con las posiciones actuales.
+        </p>
+    <div id="conten" >
+    <label id="lblPosicion"></label></div>
+
+    <p>Debemos cambiar en el Array con los siguientes cambios:</p>
+    <ul>
+        <li> Lorena entregó antes que Nahuel</li>
+        <li> Adrián no asistió y lo eliminamos de esta lista</li>
+        <li>Después de Gerónimo y antes de Jorge entregaron 2 
+            alumnos que no estaban en la lista: Roberto y Diego, 
+            en ese orden.
+            </li>
+    </ul>
+    <p>Imprima el listado actualizado y comprueba que se ha 
+        hecho correctamente los cambios.</p>
+
+
+    <div class="lblModify"><label  id="lblModify"> </label></div>
+    <hr>
+    <div class="contBtn" id="contBtn">
+
+        <button id="btn-init" class="btn-init" onclick="reordenar()">Modificar</button>
+        <button id="btn-reset" class="btn-reset" onclick="reset()" disabled>Reiniciar</button>
+    </div>
+</body>
+</html>

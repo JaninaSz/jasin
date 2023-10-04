@@ -1,0 +1,27 @@
+* {
+    margin: 5;
+    padding: 30;
+    box-sizing: border-box;
+}
+label{
+    background-color: antiquewhite;
+    font-weight: bold;
+    padding: 10;
+}
+.contBtn {
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.btn-reset .btn-init {
+    padding: 10px;
+    border-radius: 10px;
+}
+.lblModify{
+    width: 120px;
+    margin: auto;
+    background-color:ghostwhite;
+    text-align: left;
+}

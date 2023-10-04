@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="/styles/style.css"-->
+    <link rel="stylesheet" href="/styles/views.css">
+    <script src="app.js"></script>
+    <title>Ejer 1</title>
+</head>
+
+<body>
+    <h1>Ingreso de datos al array</h1>
+    <p> Crear una página web HTML, y con JS nos vaya
+        pidiendo los datos personales:
+    <p> o Nombre <br>
+        o Apellido <br>
+        o Edad <br>
+        o Ciudad donde vivimos</p>
+    • Esta información debe ser guardada en un arreglo, y
+    luego mostrada en el documento. <br>
+    • Además, debe informar en pantalla si es o no mayor
+    de 21 años. Para eso compare su edad con el número
+    21 y luego imprima en el documento una breve frase
+    como “Usted es mayor de 21 años: true/false”.
+    true o false será el resultado de su comparación.
+    </p>
+    <div id="contFicha"></div>
+    <label id="lblNombre"></label>
+
+    <label id="lblApellido"> </label><br>
+    <label id="lblEdad"> </label><br>
+    <label id="lblCiudad"> </label><br>
+    <hr>
+    <p id="pf-edad"></p>
+    <div class="contBtn" id="contBtn">
+
+        <button id="btn-init" class="btn-init" onclick="escribir()">Comenzar</button>
+        <button id="btn-reset" class="btn-reset" onclick="reset()" disabled>Reiniciar</button>
+    </div>
+</body>
+
+</html>

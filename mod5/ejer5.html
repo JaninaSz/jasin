@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <title>mod5-DOM</title>
+    <!-- estilo para ocultar la informacion del ultimo parrafo -->
+ <style type="text/css">
+    .oculto { display: none; }
+    .visible { display: inline; }
+    </style>
+</head>
+<body>
+    <div id="infopag" style="border:thin solid rgb(29, 13, 117); padding:2px"></div>
+ <h3>Centros de Formación CILSA</h3>
+ <p>Son centros tecnológicos comunitarios que tienen por objetivos promover el acceso y
+la capacitación en el uso de las Tecnologías de la Información y la Comunicación, y la 
+preparación para la inclusión laboral de poblaciones en situación de vulnerabilidad social.
+<a href="https://www.cilsa.org">(Visita la Pagina de CILSA)</a> Se encuentran en las 
+ciudades de Santa Fe, Rosario, Córdoba, <a href="https://www.instagram.com/formacion.cilsa.mdp/?hl=es-la"> Mar del Plata,</a> La Plata, Mendoza y CABA.</p>
+
+<h3>Si quiere anotarse para los proximos cursos, presione "Añadir su Nombre"</h3>
+ <ul id="ulAlumnos">
+ <li>Jesus Chirinos</li>
+ <li>Monica Figueredo</li>
+ <li>Florencia Campagna</li>
+ <li>Daniela Vallejos</li>
+ <li>Facundo Morales</li>
+ </ul>
+ 
+ <input type="button" value="Añadir su Nombre" onclick="agregar();">
+ <hr color="blue" size=3>
+ <h3>Conoce un poco mas sobre nosotros</h3>
+ <p id="texto">CILSA es una Organización No Gubernamental (O.N.G.) de bien público fund
+ada el 14 de mayo de 1966 en la ciudad de Santa Fe, República Argentina. <span id="adicion
+al" class="oculto">Tiene como MISION: Promover la inclusión plena de personas con discapac
+idad y personas provenientes de sectores marginados de la sociedad como niños, niñas y ado
+lescentes en situación de vulnerabilidad social.</span></p>
+ <a id="enlace" href="#" onclick="mostrar(); return false;">Seguir leyendo</a>
+ <script> 
+ window.onload = function() {
+ var info = document.getElementById("infopag"); 
+ var enlaces = document.getElementsByTagName("a");
+ // Mensaje de bienvenida mas nombre ingresado (Pista usar ,innerHTML)
+ 
+ // Numero de enlaces que tiene la pagina (Pista usar ,innerHTML)
+ 
+ }
+ // completa la fincion agrega()
+ 
+ //con esta funcion mostramos el contenido faltante del ultimo parrafo
+ function mostrar() {
+ var elemento = document.getElementById("adicional");
+ elemento.className = "visible";
+ 
+ var enlace = document.getElementById("enlace");
+ enlace.className = "oculto";
+ }
+ </script> 
+ </body>
+</html>

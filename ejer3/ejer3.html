@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="/styles/views.css">
+    <title>Ejer 3 - Asistencia</title>
+</head>
+<body>
+    <h1>Asistencia</h1>
+    <p> Crear una lista de asistencia de Alumnos de mínimo 8 items. <br>
+        Con el método prompt() pedirle al usuario que ingrese su nombre para agregarlo a la lista. <br>
+        Si el Alumno ya está en la lista (método: array.includes()) avisarle al usuario que su nombre ya está incluido. <br>
+        Si no, agregar el nombre a la lista y mostrarle al usuario la lista final con todos los alumnos.
+    </p>    
+    <p>Para imprimir la lista, utilizar un FOR, concatenando la leyenda que quieras.
+    Puede colocar una función para que muestre un mensaje final o que en cada iteración se ejecute (Opcional)
+    </p>
+    
+    <label id="lblCurso"> </label>
+    <ul id="ulAlumnos">
+        
+    </ul>
+    <hr>
+    <div class="contBtn" id="contBtn">
+        <button id="btn-init" class="btn-init" onclick="escribir()">Comenzar</button>
+        <button id="btn-reset" class="btn-reset" onclick="reset()" disabled>Reiniciar</button>
+    </div>
+</body>
+</html>
